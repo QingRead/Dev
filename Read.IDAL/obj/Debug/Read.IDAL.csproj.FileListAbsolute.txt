@@ -1,0 +1,21 @@
+F:\jiamy\测试\QingRead\QingRead\Read.IDAL\bin\Debug\Read.IDAL.dll
+F:\jiamy\测试\QingRead\QingRead\Read.IDAL\bin\Debug\Read.IDAL.pdb
+F:\jiamy\测试\QingRead\QingRead\Read.IDAL\bin\Debug\Read.Model.dll
+F:\jiamy\测试\QingRead\QingRead\Read.IDAL\bin\Debug\Read.Model.pdb
+F:\jiamy\测试\QingRead\QingRead\Read.IDAL\obj\Debug\Read.IDAL.csprojResolveAssemblyReference.cache
+F:\jiamy\测试\QingRead\QingRead\Read.IDAL\obj\Debug\Read.IDAL.dll
+F:\jiamy\测试\QingRead\QingRead\Read.IDAL\obj\Debug\Read.IDAL.pdb
+F:\jiamy\Web\QingRead\Read.IDAL\bin\Debug\Read.IDAL.dll
+F:\jiamy\Web\QingRead\Read.IDAL\bin\Debug\Read.IDAL.pdb
+F:\jiamy\Web\QingRead\Read.IDAL\bin\Debug\Read.Model.dll
+F:\jiamy\Web\QingRead\Read.IDAL\bin\Debug\Read.Model.pdb
+F:\jiamy\Web\QingRead\Read.IDAL\obj\Debug\Read.IDAL.csprojResolveAssemblyReference.cache
+F:\jiamy\Web\QingRead\Read.IDAL\obj\Debug\Read.IDAL.dll
+F:\jiamy\Web\QingRead\Read.IDAL\obj\Debug\Read.IDAL.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.IDAL\bin\Debug\Read.IDAL.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.IDAL\bin\Debug\Read.IDAL.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.IDAL\bin\Debug\Read.Model.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.IDAL\bin\Debug\Read.Model.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.IDAL\obj\Debug\Read.IDAL.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.IDAL\obj\Debug\Read.IDAL.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.IDAL\obj\Debug\Read.IDAL.pdb

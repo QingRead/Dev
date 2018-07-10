@@ -1,0 +1,14 @@
+F:\jiamy\测试\QingRead\QingRead\Read.IDAL\bin\Release\Read.IDAL.dll
+F:\jiamy\测试\QingRead\QingRead\Read.IDAL\bin\Release\Read.IDAL.pdb
+F:\jiamy\测试\QingRead\QingRead\Read.IDAL\bin\Release\Read.Model.dll
+F:\jiamy\测试\QingRead\QingRead\Read.IDAL\bin\Release\Read.Model.pdb
+F:\jiamy\测试\QingRead\QingRead\Read.IDAL\obj\Release\Read.IDAL.csprojResolveAssemblyReference.cache
+F:\jiamy\测试\QingRead\QingRead\Read.IDAL\obj\Release\Read.IDAL.dll
+F:\jiamy\测试\QingRead\QingRead\Read.IDAL\obj\Release\Read.IDAL.pdb
+F:\jiamy\Web\QingRead\Read.IDAL\bin\Release\Read.IDAL.dll
+F:\jiamy\Web\QingRead\Read.IDAL\bin\Release\Read.IDAL.pdb
+F:\jiamy\Web\QingRead\Read.IDAL\bin\Release\Read.Model.dll
+F:\jiamy\Web\QingRead\Read.IDAL\bin\Release\Read.Model.pdb
+F:\jiamy\Web\QingRead\Read.IDAL\obj\Release\Read.IDAL.csprojResolveAssemblyReference.cache
+F:\jiamy\Web\QingRead\Read.IDAL\obj\Release\Read.IDAL.dll
+F:\jiamy\Web\QingRead\Read.IDAL\obj\Release\Read.IDAL.pdb

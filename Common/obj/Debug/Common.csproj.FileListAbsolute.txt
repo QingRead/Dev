@@ -1,0 +1,4 @@
+F:\jiamy\测试\QingRead\QingRead\Common\bin\Debug\Common.dll
+F:\jiamy\测试\QingRead\QingRead\Common\bin\Debug\Common.pdb
+F:\jiamy\测试\QingRead\QingRead\Common\obj\Debug\Common.dll
+F:\jiamy\测试\QingRead\QingRead\Common\obj\Debug\Common.pdb

@@ -1,0 +1,15 @@
+F:\jiamy\测试\QingRead\QingRead\Read.Model\bin\Debug\Read.Model.dll
+F:\jiamy\测试\QingRead\QingRead\Read.Model\bin\Debug\Read.Model.pdb
+F:\jiamy\测试\QingRead\QingRead\Read.Model\obj\Debug\Read.Model.csprojResolveAssemblyReference.cache
+F:\jiamy\测试\QingRead\QingRead\Read.Model\obj\Debug\Read.Model.dll
+F:\jiamy\测试\QingRead\QingRead\Read.Model\obj\Debug\Read.Model.pdb
+F:\jiamy\Web\QingRead\Read.Model\bin\Debug\Read.Model.dll
+F:\jiamy\Web\QingRead\Read.Model\bin\Debug\Read.Model.pdb
+F:\jiamy\Web\QingRead\Read.Model\obj\Debug\Read.Model.csprojResolveAssemblyReference.cache
+F:\jiamy\Web\QingRead\Read.Model\obj\Debug\Read.Model.dll
+F:\jiamy\Web\QingRead\Read.Model\obj\Debug\Read.Model.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.Model\bin\Debug\Read.Model.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.Model\bin\Debug\Read.Model.pdb
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.Model\obj\Debug\Read.Model.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.Model\obj\Debug\Read.Model.dll
+C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.Model\obj\Debug\Read.Model.pdb

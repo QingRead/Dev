@@ -1,0 +1,8 @@
+F:\jiamy\测试\QingRead\QingRead\Common\bin\Release\Common.dll
+F:\jiamy\测试\QingRead\QingRead\Common\bin\Release\Common.pdb
+F:\jiamy\测试\QingRead\QingRead\Common\obj\Release\Common.dll
+F:\jiamy\测试\QingRead\QingRead\Common\obj\Release\Common.pdb
+F:\jiamy\Web\QingRead\Common\bin\Release\Common.dll
+F:\jiamy\Web\QingRead\Common\bin\Release\Common.pdb
+F:\jiamy\Web\QingRead\Common\obj\Release\Common.dll
+F:\jiamy\Web\QingRead\Common\obj\Release\Common.pdb
