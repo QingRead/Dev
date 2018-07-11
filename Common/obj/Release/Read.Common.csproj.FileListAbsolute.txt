@@ -6,3 +6,7 @@ F:\jiamy\Web\QingRead\Common\bin\Release\Common.dll
 F:\jiamy\Web\QingRead\Common\bin\Release\Common.pdb
 F:\jiamy\Web\QingRead\Common\obj\Release\Common.dll
 F:\jiamy\Web\QingRead\Common\obj\Release\Common.pdb
+D:\Project\QingRead\Common\bin\Release\Common.dll
+D:\Project\QingRead\Common\bin\Release\Common.pdb
+D:\Project\QingRead\Common\obj\Release\Common.dll
+D:\Project\QingRead\Common\obj\Release\Common.pdb

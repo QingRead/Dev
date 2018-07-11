@@ -43,6 +43,8 @@ namespace QingRead.Controllers
                     model = new UserModel();
                     model.OpenID = openid;
                     model.NickName = nickname;
+                    model.Createtime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                    model.Modifytime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                     bll.AddUser(model);
                     return Json(new { Model = model, IsExist = false }, JsonRequestBehavior.AllowGet);
                 }
@@ -65,6 +67,7 @@ namespace QingRead.Controllers
                 UserModel model = new UserModel();
                 UserBLL bll = new UserBLL();
                 model.OpenID = openid;
+                model.Modifytime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 bll.Update(model);
             }
             catch (Exception ex)
@@ -116,6 +119,8 @@ namespace QingRead.Controllers
                 model.Weather = arrStr[3];
                 model.City = arrStr[5];
                 model.DiaryContent = arrStr[7];
+                model.Createtime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                model.Modifytime= DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 bll.AddDiary(model);
             }
             catch (Exception ex)
@@ -135,6 +140,7 @@ namespace QingRead.Controllers
                 DiaryBLL bll = new DiaryBLL();
                 DiaryModel model = new DiaryModel();
                 model.ID = Guid.Parse(id);
+                model.Modifytime= DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 bll.DeleteDiary(model);
             }
             catch (Exception ex)
@@ -155,6 +161,7 @@ namespace QingRead.Controllers
                 DiaryModel model = new DiaryModel();
                 model.ID = Guid.Parse(id);
                 model.DiaryContent = content;
+                model.Modifytime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 bll.UpdateDiary(model);
             }
             catch (Exception ex)
@@ -176,6 +183,7 @@ namespace QingRead.Controllers
                 LoginLogModel model = new LoginLogModel();
                 model.OpenID = openid;
                 model.NickName = nickname;
+                model.LoginTime= DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 bll.AddLoginLog(model);
             }
             catch (Exception ex)
@@ -207,8 +215,8 @@ namespace QingRead.Controllers
                         Weather= dt.Rows[i]["Weather"].ToString(),
                         Createtime = DateTime.Parse(dt.Rows[i]["Createtime"].ToString()).ToString("yyyy-MM-dd HH:mm"),
                         Modifytime = DateTime.Parse(dt.Rows[i]["Modifytime"].ToString()).ToString("yyyy-MM-dd HH:mm"),
-                        Disabled = int.Parse(dt.Rows[i]["Disabled"].ToString()
-                                                )
+                        Disabled = int.Parse(dt.Rows[i]["Disabled"].ToString()),
+                        SortID = int.Parse(dt.Rows[i]["SortID"].ToString())
                     });
                 }
 

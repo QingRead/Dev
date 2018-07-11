@@ -22,12 +22,14 @@ namespace Read.DAL
         /// <returns></returns>
         public bool AddDiary(DiaryModel model)
         {
-            SqlParameter[] param = new SqlParameter[5];
+            SqlParameter[] param = new SqlParameter[7];
             param[0] = new SqlParameter("@OpenID", model.OpenID);
             param[1] = new SqlParameter("@NickName", model.NickName);
             param[2] = new SqlParameter("@DiaryContent", model.DiaryContent);
             param[3] = new SqlParameter("@City", model.City);
             param[4] = new SqlParameter("@Weather", model.Weather);
+            param[5] = new SqlParameter("@Createtime", model.Createtime);
+            param[6] = new SqlParameter("@Modifytime", model.Modifytime);
             try
             {
                 int i = SQLHelper.ExecuteNonQuery(CommandType.Text, @"INSERT INTO dbo.Diary
@@ -47,8 +49,8 @@ namespace Read.DAL
                                                               @DiaryContent , -- DiaryContent - text
                                                               @City,
                                                               @Weather,
-                                                              GETDATE() , -- Createtime - nvarchar(50)
-                                                              GETDATE() , -- Modifytime - nvarchar(50)
+                                                              @Createtime , -- Createtime - nvarchar(50)
+                                                              @Modifytime , -- Modifytime - nvarchar(50)
                                                               0  -- Disabled - int
                                                             )", param);
                 return i > 0;
@@ -67,11 +69,12 @@ namespace Read.DAL
         /// <returns></returns>
         public bool DeleteDiary(DiaryModel model)
         {
-            SqlParameter[] param = new SqlParameter[1];
+            SqlParameter[] param = new SqlParameter[2];
             param[0] = new SqlParameter("@ID", model.ID);
+            param[1] = new SqlParameter("@Modifytime", model.Modifytime);
             try
             {
-                int i = SQLHelper.ExecuteNonQuery(CommandType.Text, "Update dbo.Diary set Disabled =1,Modifytime=getdate() where ID=@ID AND Disabled=0", param);
+                int i = SQLHelper.ExecuteNonQuery(CommandType.Text, "Update dbo.Diary set Disabled =1,Modifytime=@Modifytime where ID=@ID AND Disabled=0", param);
                 return i > 0;
             }
             catch (Exception ex)
@@ -88,12 +91,13 @@ namespace Read.DAL
         /// <returns></returns>
         public bool UpdateDiary(DiaryModel model)
         {
-            SqlParameter[] param = new SqlParameter[2];
+            SqlParameter[] param = new SqlParameter[3];
             param[0] = new SqlParameter("@ID", model.ID);
             param[1] = new SqlParameter("@DiaryContent", model.DiaryContent);
+            param[2] = new SqlParameter("@Modifytime", model.Modifytime);
             try
             {
-                int i = SQLHelper.ExecuteNonQuery(CommandType.Text, "Update dbo.Diary set DiaryContent =@DiaryContent,Modifytime=getdate() where ID=@ID AND Disabled=0", param);
+                int i = SQLHelper.ExecuteNonQuery(CommandType.Text, "Update dbo.Diary set DiaryContent =@DiaryContent,Modifytime=@Modifytime where ID=@ID AND Disabled=0", param);
                 return i > 0;
             }
             catch (Exception ex)
@@ -141,6 +145,7 @@ namespace Read.DAL
             model.Createtime = SQLDataHelper.GetString(dr, "Createtime");
             model.Modifytime = SQLDataHelper.GetString(dr, "Modifytime");
             model.Disabled = SQLDataHelper.GetInt(dr, "Disabled");
+            model.SortID = SQLDataHelper.GetInt(dr, "SortID");
             return model;
         }
     }

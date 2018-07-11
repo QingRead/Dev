@@ -19,3 +19,10 @@ C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.IDAL\bin\Debug
 C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.IDAL\obj\Debug\Read.IDAL.csprojResolveAssemblyReference.cache
 C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.IDAL\obj\Debug\Read.IDAL.dll
 C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.IDAL\obj\Debug\Read.IDAL.pdb
+D:\Project\QingRead\Read.IDAL\bin\Debug\Read.IDAL.dll
+D:\Project\QingRead\Read.IDAL\bin\Debug\Read.IDAL.pdb
+D:\Project\QingRead\Read.IDAL\bin\Debug\Read.Model.dll
+D:\Project\QingRead\Read.IDAL\bin\Debug\Read.Model.pdb
+D:\Project\QingRead\Read.IDAL\obj\Debug\Read.IDAL.csprojResolveAssemblyReference.cache
+D:\Project\QingRead\Read.IDAL\obj\Debug\Read.IDAL.dll
+D:\Project\QingRead\Read.IDAL\obj\Debug\Read.IDAL.pdb

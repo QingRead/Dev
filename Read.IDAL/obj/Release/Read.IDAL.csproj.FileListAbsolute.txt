@@ -12,3 +12,10 @@ F:\jiamy\Web\QingRead\Read.IDAL\bin\Release\Read.Model.pdb
 F:\jiamy\Web\QingRead\Read.IDAL\obj\Release\Read.IDAL.csprojResolveAssemblyReference.cache
 F:\jiamy\Web\QingRead\Read.IDAL\obj\Release\Read.IDAL.dll
 F:\jiamy\Web\QingRead\Read.IDAL\obj\Release\Read.IDAL.pdb
+D:\Project\QingRead\Read.IDAL\bin\Release\Read.IDAL.dll
+D:\Project\QingRead\Read.IDAL\bin\Release\Read.IDAL.pdb
+D:\Project\QingRead\Read.IDAL\bin\Release\Read.Model.dll
+D:\Project\QingRead\Read.IDAL\bin\Release\Read.Model.pdb
+D:\Project\QingRead\Read.IDAL\obj\Release\Read.IDAL.csprojResolveAssemblyReference.cache
+D:\Project\QingRead\Read.IDAL\obj\Release\Read.IDAL.dll
+D:\Project\QingRead\Read.IDAL\obj\Release\Read.IDAL.pdb

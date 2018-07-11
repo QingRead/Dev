@@ -49,3 +49,15 @@ C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.BLL\bin\Debug\
 C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.BLL\obj\Debug\Read.BLL.csprojResolveAssemblyReference.cache
 C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.BLL\obj\Debug\Read.BLL.dll
 C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.BLL\obj\Debug\Read.BLL.pdb
+D:\Project\QingRead\Read.BLL\bin\Debug\Read.BLL.dll.config
+D:\Project\QingRead\Read.BLL\bin\Debug\Read.BLL.dll
+D:\Project\QingRead\Read.BLL\bin\Debug\Read.BLL.pdb
+D:\Project\QingRead\Read.BLL\bin\Debug\Common.dll
+D:\Project\QingRead\Read.BLL\bin\Debug\Read.IDAL.dll
+D:\Project\QingRead\Read.BLL\bin\Debug\Read.Model.dll
+D:\Project\QingRead\Read.BLL\bin\Debug\Common.pdb
+D:\Project\QingRead\Read.BLL\bin\Debug\Read.IDAL.pdb
+D:\Project\QingRead\Read.BLL\bin\Debug\Read.Model.pdb
+D:\Project\QingRead\Read.BLL\obj\Debug\Read.BLL.csprojResolveAssemblyReference.cache
+D:\Project\QingRead\Read.BLL\obj\Debug\Read.BLL.dll
+D:\Project\QingRead\Read.BLL\obj\Debug\Read.BLL.pdb

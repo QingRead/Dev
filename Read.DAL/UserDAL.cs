@@ -22,9 +22,11 @@ namespace Read.DAL
         /// <returns></returns>
         public bool AddUser(UserModel model)
         {
-            SqlParameter[] param = new SqlParameter[2];
+            SqlParameter[] param = new SqlParameter[4];
             param[0] = new SqlParameter("@OpenID", model.OpenID);
             param[1] = new SqlParameter("@NickName", model.NickName);
+            param[2] = new SqlParameter("@Createtime", model.Createtime);
+            param[3] = new SqlParameter("@Modifytime", model.Modifytime);
             try
             {
                 int i = SQLHelper.ExecuteNonQuery(CommandType.Text, @"INSERT INTO dbo.[User]
@@ -38,8 +40,8 @@ namespace Read.DAL
 	                                                            VALUES  ( NEWID() , -- ID - uniqueidentifier
 	                                                                      @OpenID , -- OpenID - nvarchar(100)
 	                                                                      @NickName , -- NickName - nvarchar(50)
-	                                                                      GETDATE() , -- Createtime - nvarchar(50)
-	                                                                      GETDATE() , -- Modifytime - nvarchar(50)
+	                                                                      @Createtime , -- Createtime - nvarchar(50)
+	                                                                      @Modifytime , -- Modifytime - nvarchar(50)
 	                                                                      0  -- Disabled - int
 	                                                                    )", param);
                 return i > 0;
@@ -58,11 +60,12 @@ namespace Read.DAL
         /// <returns></returns>
         public bool Update(UserModel model)
         {
-            SqlParameter[] param = new SqlParameter[1];
+            SqlParameter[] param = new SqlParameter[2];
             param[0] = new SqlParameter("@OpenID", model.OpenID);
+            param[1] = new SqlParameter("@Modifytime", model.Modifytime);
             try
             {
-                int i = SQLHelper.ExecuteNonQuery(CommandType.Text, "Update [dbo].[User] set Disabled=1,Modifytime=getdate() where OpenID=@OpenID AND Disabled=0", param);
+                int i = SQLHelper.ExecuteNonQuery(CommandType.Text, "Update [dbo].[User] set Disabled=1,Modifytime=@Modifytime where OpenID=@OpenID AND Disabled=0", param);
                 return i > 0;
             }
             catch (Exception ex)

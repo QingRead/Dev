@@ -31,3 +31,14 @@ C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.DAL\bin\Debug\
 C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.DAL\obj\Debug\Read.DAL.csprojResolveAssemblyReference.cache
 C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.DAL\obj\Debug\Read.DAL.dll
 C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.DAL\obj\Debug\Read.DAL.pdb
+D:\Project\QingRead\Read.DAL\bin\Debug\Read.DAL.dll
+D:\Project\QingRead\Read.DAL\bin\Debug\Read.DAL.pdb
+D:\Project\QingRead\Read.DAL\bin\Debug\Common.dll
+D:\Project\QingRead\Read.DAL\bin\Debug\Read.IDAL.dll
+D:\Project\QingRead\Read.DAL\bin\Debug\Read.Model.dll
+D:\Project\QingRead\Read.DAL\bin\Debug\Common.pdb
+D:\Project\QingRead\Read.DAL\bin\Debug\Read.IDAL.pdb
+D:\Project\QingRead\Read.DAL\bin\Debug\Read.Model.pdb
+D:\Project\QingRead\Read.DAL\obj\Debug\Read.DAL.csprojResolveAssemblyReference.cache
+D:\Project\QingRead\Read.DAL\obj\Debug\Read.DAL.dll
+D:\Project\QingRead\Read.DAL\obj\Debug\Read.DAL.pdb

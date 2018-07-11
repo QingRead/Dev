@@ -10,163 +10,163 @@
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
-      <publishTime>07/03/2018 16:45:29</publishTime>
+      <publishTime>07/10/2018 22:50:39</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
-      <publishTime>02/22/2013 08:43:40</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
-      <publishTime>07/03/2018 16:45:29</publishTime>
+      <publishTime>07/10/2018 22:50:39</publishTime>
     </File>
     <File Include="bin/Common.dll">
-      <publishTime>07/03/2018 17:29:43</publishTime>
+      <publishTime>07/11/2018 20:37:49</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
-      <publishTime>12/07/2015 19:04:38</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.DependencyCollector.dll">
-      <publishTime>03/10/2016 14:26:18</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
-      <publishTime>03/10/2016 14:26:26</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
-      <publishTime>03/09/2016 12:00:14</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Web.dll">
-      <publishTime>03/10/2016 14:26:26</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.WindowsServer.dll">
-      <publishTime>03/10/2016 14:26:26</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/Microsoft.ApplicationInsights.dll">
-      <publishTime>03/09/2016 11:57:34</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>06/15/2015 02:06:24</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>07/25/2012 11:48:56</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>04/25/2013 15:40:12</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/QingRead.dll">
-      <publishTime>07/06/2018 20:31:20</publishTime>
+      <publishTime>07/11/2018 20:54:23</publishTime>
     </File>
     <File Include="bin/Read.BLL.dll">
-      <publishTime>07/06/2018 20:31:17</publishTime>
+      <publishTime>07/11/2018 20:37:50</publishTime>
     </File>
     <File Include="bin/Read.DAL.dll">
-      <publishTime>07/06/2018 20:31:17</publishTime>
+      <publishTime>07/11/2018 20:54:19</publishTime>
     </File>
     <File Include="bin/Read.IDAL.dll">
-      <publishTime>07/06/2018 20:31:17</publishTime>
+      <publishTime>07/11/2018 20:37:49</publishTime>
     </File>
     <File Include="bin/Read.Model.dll">
-      <publishTime>07/06/2018 17:18:07</publishTime>
+      <publishTime>07/11/2018 20:37:49</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
-      <publishTime>06/18/2015 20:19:46</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
-      <publishTime>06/18/2015 20:19:46</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
-      <publishTime>06/18/2015 20:19:46</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
-      <publishTime>06/18/2015 20:19:44</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
-      <publishTime>06/18/2015 20:19:46</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
-      <publishTime>06/18/2015 20:19:46</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
-      <publishTime>06/18/2015 20:19:46</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/roslyn/System.Collections.Immutable.dll">
-      <publishTime>06/18/2015 20:19:46</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/roslyn/System.Reflection.Metadata.dll">
-      <publishTime>06/18/2015 20:19:46</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe">
-      <publishTime>06/18/2015 20:19:46</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe">
-      <publishTime>06/18/2015 20:19:46</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe.config">
-      <publishTime>06/18/2015 20:19:46</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>01/28/2015 04:04:30</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>01/28/2015 04:02:18</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
-      <publishTime>02/11/2014 15:26:04</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>01/28/2015 04:02:32</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.dll">
-      <publishTime>01/28/2015 04:04:30</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.dll">
-      <publishTime>01/28/2015 04:04:30</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.dll">
-      <publishTime>01/28/2015 04:04:30</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
-      <publishTime>07/17/2013 17:03:52</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
-      <publishTime>01/28/2015 04:04:32</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
-      <publishTime>01/28/2015 04:02:22</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
-      <publishTime>01/28/2015 04:02:34</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.WebPages.Deployment.resources.dll">
-      <publishTime>01/28/2015 04:04:32</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.WebPages.Razor.resources.dll">
-      <publishTime>01/28/2015 04:04:32</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.WebPages.resources.dll">
-      <publishTime>01/28/2015 04:04:32</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>07/03/2018 16:46:18</publishTime>
+      <publishTime>07/10/2018 22:50:39</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>07/03/2018 17:18:47</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="scripts/ai.0.22.9-build00167.js">
-      <publishTime>07/03/2018 16:45:29</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="scripts/ai.0.22.9-build00167.min.js">
-      <publishTime>07/03/2018 16:45:29</publishTime>
+      <publishTime>07/10/2018 22:50:40</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>07/03/2018 17:27:02</publishTime>
+      <publishTime>07/10/2018 22:50:39</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>07/03/2018 17:24:25</publishTime>
+      <publishTime>07/10/2018 22:50:39</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>07/03/2018 17:25:47</publishTime>
+      <publishTime>07/10/2018 22:50:39</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/06/2018 17:18:11</publishTime>
+      <publishTime>07/11/2018 20:37:55</publishTime>
     </File>
   </ItemGroup>
 </Project>
