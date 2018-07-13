@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="IDiaryDAL.cs" />
     <Compile Include="ILoginLogDAL.cs" />
+    <Compile Include="IMoodDAL.cs" />
     <Compile Include="IUserDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

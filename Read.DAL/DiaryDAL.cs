@@ -22,7 +22,7 @@ namespace Read.DAL
         /// <returns></returns>
         public bool AddDiary(DiaryModel model)
         {
-            SqlParameter[] param = new SqlParameter[7];
+            SqlParameter[] param = new SqlParameter[8];
             param[0] = new SqlParameter("@OpenID", model.OpenID);
             param[1] = new SqlParameter("@NickName", model.NickName);
             param[2] = new SqlParameter("@DiaryContent", model.DiaryContent);
@@ -30,6 +30,7 @@ namespace Read.DAL
             param[4] = new SqlParameter("@Weather", model.Weather);
             param[5] = new SqlParameter("@Createtime", model.Createtime);
             param[6] = new SqlParameter("@Modifytime", model.Modifytime);
+            param[7] = new SqlParameter("@IsPublic", model.IsPublic);
             try
             {
                 int i = SQLHelper.ExecuteNonQuery(CommandType.Text, @"INSERT INTO dbo.Diary
@@ -41,7 +42,8 @@ namespace Read.DAL
                                                               Weather,
                                                               Createtime ,
                                                               Modifytime ,
-                                                              Disabled
+                                                              Disabled,
+                                                              IsPublic
                                                             )
                                                     VALUES  ( NEWID() , -- ID - uniqueidentifier
                                                               @OpenID , -- OpenID - nvarchar(100)
@@ -51,7 +53,8 @@ namespace Read.DAL
                                                               @Weather,
                                                               @Createtime , -- Createtime - nvarchar(50)
                                                               @Modifytime , -- Modifytime - nvarchar(50)
-                                                              0  -- Disabled - int
+                                                              0, -- Disabled - int
+                                                              @IsPublic
                                                             )", param);
                 return i > 0;
             }
@@ -133,7 +136,7 @@ namespace Read.DAL
         /// </summary>
         /// <param name="dr"></param>
         /// <returns></returns>
-        private DiaryModel GetUserModel(SqlDataReader dr)
+        private DiaryModel GetDiaryModel(SqlDataReader dr)
         {
             DiaryModel model = new DiaryModel();
             model.ID = SQLDataHelper.GetGuid(dr, "ID");
@@ -146,6 +149,7 @@ namespace Read.DAL
             model.Modifytime = SQLDataHelper.GetString(dr, "Modifytime");
             model.Disabled = SQLDataHelper.GetInt(dr, "Disabled");
             model.SortID = SQLDataHelper.GetInt(dr, "SortID");
+            model.IsPublic = SQLDataHelper.GetInt(dr, "IsPublic");
             return model;
         }
     }

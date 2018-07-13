@@ -18,3 +18,8 @@ D:\Project\QingRead\Read.Model\bin\Debug\Read.Model.pdb
 D:\Project\QingRead\Read.Model\obj\Debug\Read.Model.csprojResolveAssemblyReference.cache
 D:\Project\QingRead\Read.Model\obj\Debug\Read.Model.dll
 D:\Project\QingRead\Read.Model\obj\Debug\Read.Model.pdb
+F:\jiamy\测试\QingRead\Read.Model\bin\Debug\Read.Model.dll
+F:\jiamy\测试\QingRead\Read.Model\bin\Debug\Read.Model.pdb
+F:\jiamy\测试\QingRead\Read.Model\obj\Debug\Read.Model.csprojResolveAssemblyReference.cache
+F:\jiamy\测试\QingRead\Read.Model\obj\Debug\Read.Model.dll
+F:\jiamy\测试\QingRead\Read.Model\obj\Debug\Read.Model.pdb

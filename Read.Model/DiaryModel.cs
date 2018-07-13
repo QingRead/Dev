@@ -19,6 +19,7 @@ namespace Read.Model
         private string _modifytime;
         private int _disabled;
         private int _sortid;
+        private int _ispublic;
         #endregion
 
         #region
@@ -27,7 +28,7 @@ namespace Read.Model
             Disabled = 0;
         }
 
-        public DiaryModel(Guid id, string openid, string nickname, string createtime, string modifytime, int disabled,string diarycontent,string city,string weather,int sortid)
+        public DiaryModel(Guid id, string openid, string nickname, string createtime, string modifytime, int disabled,string diarycontent,string city,string weather,int sortid,int ispublic)
         {
             this._id = id;
             this._openid = openid;
@@ -39,6 +40,7 @@ namespace Read.Model
             this._weather = weather;
             this._city = city;
             this._sortid = sortid;
+            this._ispublic = ispublic;
         }
 
         #endregion
@@ -132,6 +134,15 @@ namespace Read.Model
         {
             get { return _sortid; }
             set { _sortid = value; }
+        }
+
+        /// <summary>
+        /// 是否公开
+        /// </summary>
+        public int IsPublic
+        {
+            get { return _ispublic; }
+            set { _ispublic = value; }
         }
         #endregion
     }

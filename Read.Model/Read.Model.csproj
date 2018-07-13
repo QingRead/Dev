@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="DiaryModel.cs" />
     <Compile Include="LoginLogModel.cs" />
+    <Compile Include="MoodModl.cs" />
     <Compile Include="UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

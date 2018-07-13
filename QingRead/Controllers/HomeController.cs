@@ -20,7 +20,7 @@ namespace QingRead.Controllers
             return View();
         }
 
-        #region 接口
+        #region 用户
         /// <summary>
         /// 添加用户
         /// </summary>
@@ -75,7 +75,9 @@ namespace QingRead.Controllers
                 throw ex;
             }
         }
+        #endregion
 
+        #region 日记
         /// <summary>
         /// 获取日记信息
         /// </summary>
@@ -102,7 +104,7 @@ namespace QingRead.Controllers
         }
 
         /// <summary>
-        /// 添加日记
+        /// 添加日记(类型:1.日记，2.心情，3.手账)
         /// </summary>
         /// <param name="openid"></param>
         /// <param name="nickname"></param>
@@ -171,6 +173,152 @@ namespace QingRead.Controllers
         }
 
         /// <summary>
+        /// 日记放入list
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <returns></returns>
+        public List<DiaryModel> TableToList(DataTable dt)
+        {
+            try
+            {
+                List<DiaryModel> list = new List<DiaryModel>();
+
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    list.Add(new DiaryModel()
+                    {
+                        ID = Guid.Parse(dt.Rows[i]["ID"].ToString()),
+                        OpenID = dt.Rows[i]["OpenID"].ToString(),
+                        NickName = dt.Rows[i]["NickName"].ToString(),
+                        DiaryContent = dt.Rows[i]["DiaryContent"].ToString(),
+                        City = dt.Rows[i]["City"].ToString(),
+                        Weather = dt.Rows[i]["Weather"].ToString(),
+                        Createtime = DateTime.Parse(dt.Rows[i]["Createtime"].ToString()).ToString("yyyy-MM-dd HH:mm"),
+                        Modifytime = DateTime.Parse(dt.Rows[i]["Modifytime"].ToString()).ToString("yyyy-MM-dd HH:mm"),
+                        Disabled = int.Parse(dt.Rows[i]["Disabled"].ToString()),
+                        SortID = int.Parse(dt.Rows[i]["SortID"].ToString()),
+                        IsPublic = int.Parse(dt.Rows[i]["IsPublic"].ToString())
+                    });
+                }
+
+                return list;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        #endregion
+
+        #region 心情
+
+        /// <summary>
+        /// 获取心情信息
+        /// </summary>
+        /// <param name="openid"></param>
+        /// <returns></returns>
+        public JsonResult GetMoodInfo(string openid)
+        {
+            try
+            {
+                MoodBLL bll = new MoodBLL();
+                DataTable dt = bll.GetMoodToTable(openid);
+
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    return Json(new { Model = TableToList(dt), IsExist = true }, JsonRequestBehavior.AllowGet);
+                }
+                else
+                    return null;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        /// <summary>
+        /// 删除心情
+        /// </summary>
+        /// <param name="openid"></param>
+        public void DeleteMood(string id)
+        {
+            try
+            {
+                MoodBLL bll = new MoodBLL();
+                MoodModl model = new MoodModl();
+                model.ID = Guid.Parse(id);
+                model.Modifytime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                bll.DeleteMood(model);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        /// <summary>
+        /// 修改心情
+        /// </summary>
+        /// <param name="openid"></param>
+        public void UpdateMood(string id, string content)
+        {
+            try
+            {
+                MoodBLL bll = new MoodBLL();
+                MoodModl model = new MoodModl();
+                model.ID = Guid.Parse(id);
+                model.Mood = content;
+                model.Modifytime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                bll.UpdateMood(model);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        /// <summary>
+        /// 心情放入list
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <returns></returns>
+        public List<MoodModl> MoodTableToList(DataTable dt)
+        {
+            try
+            {
+                List<MoodModl> list = new List<MoodModl>();
+
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    list.Add(new MoodModl()
+                    {
+                        ID = Guid.Parse(dt.Rows[i]["ID"].ToString()),
+                        OpenID = dt.Rows[i]["OpenID"].ToString(),
+                        NickName = dt.Rows[i]["NickName"].ToString(),
+                        Mood = dt.Rows[i]["Mood"].ToString(),
+                        City = dt.Rows[i]["City"].ToString(),
+                        Weather = dt.Rows[i]["Weather"].ToString(),
+                        Createtime = DateTime.Parse(dt.Rows[i]["Createtime"].ToString()).ToString("yyyy-MM-dd HH:mm"),
+                        Modifytime = DateTime.Parse(dt.Rows[i]["Modifytime"].ToString()).ToString("yyyy-MM-dd HH:mm"),
+                        Disabled = int.Parse(dt.Rows[i]["Disabled"].ToString()),
+                        IsPublic = int.Parse(dt.Rows[i]["IsPublic"].ToString())
+                    });
+                }
+
+                return list;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        #endregion
+
+        #region 日志
+        /// <summary>
         /// 添加登录日志
         /// </summary>
         /// <param name="openid"></param>
@@ -191,51 +339,18 @@ namespace QingRead.Controllers
                 throw ex;
             }
         }
+        #endregion
 
-        /// <summary>
-        /// 日记放入list
-        /// </summary>
-        /// <param name="dt"></param>
-        /// <returns></returns>
-        public List<DiaryModel> TableToList(DataTable dt)
-        {
-            try
-            {
-                List<DiaryModel> list = new List<DiaryModel>();
+        #region 获取用户信息(根据code)
 
-                for (int i = 0; i < dt.Rows.Count; i++)
-                {
-                    list.Add(new DiaryModel()
-                    {
-                        ID = Guid.Parse(dt.Rows[i]["ID"].ToString()),
-                        OpenID = dt.Rows[i]["OpenID"].ToString(),
-                        NickName = dt.Rows[i]["NickName"].ToString(),
-                        DiaryContent = dt.Rows[i]["DiaryContent"].ToString(),
-                        City = dt.Rows[i]["City"].ToString(),
-                        Weather= dt.Rows[i]["Weather"].ToString(),
-                        Createtime = DateTime.Parse(dt.Rows[i]["Createtime"].ToString()).ToString("yyyy-MM-dd HH:mm"),
-                        Modifytime = DateTime.Parse(dt.Rows[i]["Modifytime"].ToString()).ToString("yyyy-MM-dd HH:mm"),
-                        Disabled = int.Parse(dt.Rows[i]["Disabled"].ToString()),
-                        SortID = int.Parse(dt.Rows[i]["SortID"].ToString())
-                    });
-                }
-
-                return list;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public JsonResult cs(string code)
+        public JsonResult RequestCode(string code)
         {
             return Json(new { Model = GetOpenidByCode(code)},JsonRequestBehavior.AllowGet);
         }
 
-        public string GetOpenidByCode(string code)
+        public JsonResult GetOpenidByCode(string code)
         {
-            string url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxcfe39f29a5d2cd3a&secret=23315f9071ddc1c87409001621f081c3&code=" + code + "&grant_type=authorization_code";
+            string url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxcfe39f29a5d2cd3a&secret=23315f9071ddc1c87409001621f081c3&code=" + code +"&grant_type=authorization_code";
             string html = string.Empty;
 
             try
@@ -245,12 +360,23 @@ namespace QingRead.Controllers
 
                 HttpWebResponse response = request.GetResponse() as HttpWebResponse;
                 Stream ioStream = response.GetResponseStream();
-                StreamReader sr = new StreamReader(ioStream, Encoding.Default);
+                StreamReader sr = new StreamReader(ioStream, Encoding.UTF8);
                 html = sr.ReadToEnd();
                 sr.Close();
                 ioStream.Close();
                 response.Close();
-                return html;
+                string key="\"openid\":\"";
+                int startIndex = html.IndexOf(key);
+                if (startIndex != -1)
+                {
+                    int endIndex = html.IndexOf("\",", startIndex);
+                    string openid = html.Substring(startIndex + key.Length, endIndex - startIndex - key.Length);
+                    return Json(new { OpenID = openid }, JsonRequestBehavior.AllowGet);
+                }
+                else
+                {
+                    return null;
+                }
             }
             catch (Exception ex)
             {
