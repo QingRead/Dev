@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="DiaryBLL.cs" />
     <Compile Include="LoginLogBLL.cs" />
+    <Compile Include="MoodBLL.cs" />
     <Compile Include="UserBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

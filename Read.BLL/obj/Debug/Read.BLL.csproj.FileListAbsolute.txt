@@ -61,3 +61,17 @@ D:\Project\QingRead\Read.BLL\bin\Debug\Read.Model.pdb
 D:\Project\QingRead\Read.BLL\obj\Debug\Read.BLL.csprojResolveAssemblyReference.cache
 D:\Project\QingRead\Read.BLL\obj\Debug\Read.BLL.dll
 D:\Project\QingRead\Read.BLL\obj\Debug\Read.BLL.pdb
+F:\jiamy\测试\QingRead\Read.BLL\bin\Debug\Read.BLL.dll.config
+F:\jiamy\测试\QingRead\Read.BLL\bin\Debug\Read.BLL.dll
+F:\jiamy\测试\QingRead\Read.BLL\bin\Debug\Read.BLL.pdb
+F:\jiamy\测试\QingRead\Read.BLL\bin\Debug\Common.dll
+F:\jiamy\测试\QingRead\Read.BLL\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\jiamy\测试\QingRead\Read.BLL\bin\Debug\Read.IDAL.dll
+F:\jiamy\测试\QingRead\Read.BLL\bin\Debug\Read.Model.dll
+F:\jiamy\测试\QingRead\Read.BLL\bin\Debug\Common.pdb
+F:\jiamy\测试\QingRead\Read.BLL\bin\Debug\Read.IDAL.pdb
+F:\jiamy\测试\QingRead\Read.BLL\bin\Debug\Read.Model.pdb
+F:\jiamy\测试\QingRead\Read.BLL\bin\Debug\zh-Hans\Microsoft.Web.Infrastructure.resources.dll
+F:\jiamy\测试\QingRead\Read.BLL\obj\Debug\Read.BLL.csprojResolveAssemblyReference.cache
+F:\jiamy\测试\QingRead\Read.BLL\obj\Debug\Read.BLL.dll
+F:\jiamy\测试\QingRead\Read.BLL\obj\Debug\Read.BLL.pdb

@@ -7,11 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{2BF6B280-9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QingRead", "QingRead\QingRead.csproj", "{30356D7C-00E8-488D-9740-C629E5C8BF8B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "需求文档", "需求文档", "{4F54137E-8B65-4963-84B3-BEE4417906BA}"
-	ProjectSection(SolutionItems) = preProject
-		日记1.txt = 日记1.txt
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{60CB6380-6059-4F5B-9281-9F3AD35FBF02}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Read.Common", "Common\Read.Common.csproj", "{433E645D-9CD2-404C-B8E3-02598E175C0F}"
