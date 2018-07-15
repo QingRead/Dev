@@ -114,16 +114,34 @@ namespace QingRead.Controllers
             try
             {
                 string[] arrStr = content.Replace("\"","").Replace("}","").Split(new char[2] { ',',':'});
-                DiaryBLL bll = new DiaryBLL();
-                DiaryModel model = new DiaryModel();
-                model.OpenID = openid;
-                model.NickName = nickname;
-                model.Weather = arrStr[3];
-                model.City = arrStr[5];
-                model.DiaryContent = arrStr[7];
-                model.Createtime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-                model.Modifytime= DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-                bll.AddDiary(model);
+                if (arrStr[9] == "1")
+                {
+                    DiaryBLL bll = new DiaryBLL();
+                    DiaryModel model = new DiaryModel();
+                    model.OpenID = openid;
+                    model.NickName = nickname;
+                    model.Weather = arrStr[3];
+                    model.City = arrStr[5];
+                    model.DiaryContent = arrStr[7];
+                    model.IsPublic = int.Parse(arrStr[11]);
+                    model.Createtime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                    model.Modifytime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                    bll.AddDiary(model);
+                }
+                else if (arrStr[9] == "2")
+                {
+                    MoodBLL bll = new MoodBLL();
+                    MoodModl model = new MoodModl();
+                    model.OpenID = openid;
+                    model.NickName = nickname;
+                    model.Weather = arrStr[3];
+                    model.City = arrStr[5];
+                    model.Mood = arrStr[7];
+                    model.IsPublic = int.Parse(arrStr[11]);
+                    model.Createtime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                    model.Modifytime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                    bll.AddMood(model);
+                }
             }
             catch (Exception ex)
             {

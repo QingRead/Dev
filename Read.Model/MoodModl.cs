@@ -25,6 +25,7 @@ namespace Read.Model
         public MoodModl()
         {
             Disabled = 0;
+            IsPublic = 0;
         }
 
         public MoodModl(Guid id, string openid, string nickname, string createtime, string modifytime, int disabled, string mood, string city, string weather, int ispublic)

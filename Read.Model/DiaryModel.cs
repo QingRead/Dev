@@ -26,6 +26,7 @@ namespace Read.Model
         public DiaryModel()
         {
             Disabled = 0;
+            IsPublic = 0;
         }
 
         public DiaryModel(Guid id, string openid, string nickname, string createtime, string modifytime, int disabled,string diarycontent,string city,string weather,int sortid,int ispublic)
