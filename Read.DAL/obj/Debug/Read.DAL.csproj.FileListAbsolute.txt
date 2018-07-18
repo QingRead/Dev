@@ -31,17 +31,6 @@ C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.DAL\bin\Debug\
 C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.DAL\obj\Debug\Read.DAL.csprojResolveAssemblyReference.cache
 C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.DAL\obj\Debug\Read.DAL.dll
 C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.DAL\obj\Debug\Read.DAL.pdb
-F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Read.DAL.dll
-F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Read.DAL.pdb
-F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Common.dll
-F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Read.IDAL.dll
-F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Read.Model.dll
-F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Common.pdb
-F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Read.IDAL.pdb
-F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Read.Model.pdb
-F:\jiamy\测试\QingRead\Read.DAL\obj\Debug\Read.DAL.csprojResolveAssemblyReference.cache
-F:\jiamy\测试\QingRead\Read.DAL\obj\Debug\Read.DAL.dll
-F:\jiamy\测试\QingRead\Read.DAL\obj\Debug\Read.DAL.pdb
 D:\Project\QingRead\Read.DAL\bin\Debug\Read.DAL.dll
 D:\Project\QingRead\Read.DAL\bin\Debug\Read.DAL.pdb
 D:\Project\QingRead\Read.DAL\bin\Debug\Common.dll
@@ -53,3 +42,14 @@ D:\Project\QingRead\Read.DAL\bin\Debug\Read.Model.pdb
 D:\Project\QingRead\Read.DAL\obj\Debug\Read.DAL.csprojResolveAssemblyReference.cache
 D:\Project\QingRead\Read.DAL\obj\Debug\Read.DAL.dll
 D:\Project\QingRead\Read.DAL\obj\Debug\Read.DAL.pdb
+F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Read.DAL.dll
+F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Read.DAL.pdb
+F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Common.dll
+F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Read.IDAL.dll
+F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Read.Model.dll
+F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Common.pdb
+F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Read.IDAL.pdb
+F:\jiamy\测试\QingRead\Read.DAL\bin\Debug\Read.Model.pdb
+F:\jiamy\测试\QingRead\Read.DAL\obj\Debug\Read.DAL.csprojResolveAssemblyReference.cache
+F:\jiamy\测试\QingRead\Read.DAL\obj\Debug\Read.DAL.dll
+F:\jiamy\测试\QingRead\Read.DAL\obj\Debug\Read.DAL.pdb

@@ -10,3 +10,7 @@ D:\Project\QingRead\Read.Model\bin\Release\Read.Model.dll
 D:\Project\QingRead\Read.Model\bin\Release\Read.Model.pdb
 D:\Project\QingRead\Read.Model\obj\Release\Read.Model.dll
 D:\Project\QingRead\Read.Model\obj\Release\Read.Model.pdb
+F:\jiamy\测试\QingRead\Read.Model\bin\Release\Read.Model.dll
+F:\jiamy\测试\QingRead\Read.Model\bin\Release\Read.Model.pdb
+F:\jiamy\测试\QingRead\Read.Model\obj\Release\Read.Model.dll
+F:\jiamy\测试\QingRead\Read.Model\obj\Release\Read.Model.pdb

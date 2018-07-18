@@ -17,3 +17,8 @@ D:\Project\QingRead\Common\bin\Debug\Common.pdb
 D:\Project\QingRead\Common\obj\Debug\Read.Common.csprojResolveAssemblyReference.cache
 D:\Project\QingRead\Common\obj\Debug\Common.dll
 D:\Project\QingRead\Common\obj\Debug\Common.pdb
+F:\jiamy\测试\QingRead\Common\bin\Debug\Common.dll
+F:\jiamy\测试\QingRead\Common\bin\Debug\Common.pdb
+F:\jiamy\测试\QingRead\Common\obj\Debug\Read.Common.csprojResolveAssemblyReference.cache
+F:\jiamy\测试\QingRead\Common\obj\Debug\Common.dll
+F:\jiamy\测试\QingRead\Common\obj\Debug\Common.pdb

@@ -11,7 +11,7 @@ namespace Helios.Common
     public class SQLHelper
     {
         //取得数据库连接web.config 中配置 
-        public static readonly string ConnectString = ConfigurationSettings.AppSettings["DBString"].ToString();
+        public static readonly string ConnectString = DESEncrypt.UnAesStr(ConfigurationSettings.AppSettings["DBString"].ToString());
 
         /// <summary>
         /// 无事务，数据查询

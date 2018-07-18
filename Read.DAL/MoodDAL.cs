@@ -122,7 +122,11 @@ namespace Read.DAL
                 SqlParameter[] parm = new SqlParameter[1];
                 parm[0] = new SqlParameter("@OpenID", openid);
 
-                return SQLHelper.ExecuteTable(CommandType.Text, @"SELECT * FROM dbo.Mood WHERE Disabled=0 AND OpenID=@OpenID ORDER BY Createtime DESC", parm);
+                return SQLHelper.ExecuteTable(CommandType.Text, @"SELECT  *
+                                                            FROM    dbo.Mood
+                                                            WHERE   Disabled = 0
+                                                                    AND OpenID=@OpenID
+                                                            ORDER BY Createtime DESC", parm);
             }
             catch (Exception ex)
             {
