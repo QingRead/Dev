@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Read.Model
 {
+    [Serializable]
     public class LoginLogModel
     {
         #region

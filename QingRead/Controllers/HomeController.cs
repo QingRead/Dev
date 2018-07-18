@@ -1,4 +1,5 @@
-﻿using Read.BLL;
+﻿using Helios.Common;
+using Read.BLL;
 using Read.Model;
 using System;
 using System.Collections.Generic;
@@ -27,16 +28,17 @@ namespace QingRead.Controllers
         /// <param name="openID"></param>
         /// <param name="nickname"></param>
         /// <returns></returns>
-        public JsonResult GetUserInfo(string openid, string nickname)
+        public JsonResult GetUserInfo(string code, string nickname)
         {
             try
             {
+                string openid = GetOpenidByCode(code);
                 UserModel model = new UserModel();
                 UserBLL bll = new UserBLL();
                 model = bll.GetUserModelByID(openid);
                 if (model != null)
                 {
-                    return Json(new { Model = model, IsExist = true }, JsonRequestBehavior.AllowGet);
+                    return Json(new { OpenID=model.OpenID }, JsonRequestBehavior.AllowGet);
                 }
                 else
                 {
@@ -46,7 +48,7 @@ namespace QingRead.Controllers
                     model.Createtime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                     model.Modifytime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                     bll.AddUser(model);
-                    return Json(new { Model = model, IsExist = false }, JsonRequestBehavior.AllowGet);
+                    return Json(new { OpenID=openid }, JsonRequestBehavior.AllowGet);
                 }
             }
             catch (Exception ex)
@@ -206,7 +208,7 @@ namespace QingRead.Controllers
                     list.Add(new DiaryModel()
                     {
                         ID = Guid.Parse(dt.Rows[i]["ID"].ToString()),
-                        OpenID = dt.Rows[i]["OpenID"].ToString(),
+                        OpenID= dt.Rows[i]["OpenID"].ToString(),
                         NickName = dt.Rows[i]["NickName"].ToString(),
                         DiaryContent = dt.Rows[i]["DiaryContent"].ToString(),
                         City = dt.Rows[i]["City"].ToString(),
@@ -245,7 +247,7 @@ namespace QingRead.Controllers
 
                 if (dt != null && dt.Rows.Count > 0)
                 {
-                    return Json(new { Model = TableToList(dt), IsExist = true }, JsonRequestBehavior.AllowGet);
+                    return Json(new { Model = MoodTableToList(dt), IsExist = true }, JsonRequestBehavior.AllowGet);
                 }
                 else
                     return null;
@@ -313,7 +315,7 @@ namespace QingRead.Controllers
                     list.Add(new MoodModl()
                     {
                         ID = Guid.Parse(dt.Rows[i]["ID"].ToString()),
-                        OpenID = dt.Rows[i]["OpenID"].ToString(),
+                        OpenID= dt.Rows[i]["OpenID"].ToString(),
                         NickName = dt.Rows[i]["NickName"].ToString(),
                         Mood = dt.Rows[i]["Mood"].ToString(),
                         City = dt.Rows[i]["City"].ToString(),
@@ -341,10 +343,11 @@ namespace QingRead.Controllers
         /// </summary>
         /// <param name="openid"></param>
         /// <param name="nickname"></param>
-        public void AddLoginLog(string openid, string nickname)
+        public void AddLoginLog(string code, string nickname)
         {
             try
             {
+                string openid = GetOpenidByCode(code);
                 LoginLogBLL bll = new LoginLogBLL();
                 LoginLogModel model = new LoginLogModel();
                 model.OpenID = openid;
@@ -361,35 +364,25 @@ namespace QingRead.Controllers
 
         #region 获取用户信息(根据code)
 
-        public JsonResult RequestCode(string code)
+        public string GetOpenidByCode(string code)
         {
-            return Json(new { Model = GetOpenidByCode(code)},JsonRequestBehavior.AllowGet);
-        }
-
-        public JsonResult GetOpenidByCode(string code)
-        {
-            string url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxcfe39f29a5d2cd3a&secret=23315f9071ddc1c87409001621f081c3&code=" + code +"&grant_type=authorization_code";
+            string url = "https://api.weixin.qq.com/sns/jscode2session?appid="+ DESEncrypt.UnAesStr("v4j1VcTNJ6jrA6WjHpZqDWO/TC68FF3qBV4cDTcCfHY=") + "&secret="+ DESEncrypt.UnAesStr("iPz+iDqI1UE2sI95IuqEcETR+1PWEL9NT8hbQJ25KAkL67//XePTfaGIUqOLKh0q") + "&js_code=" + code +"&grant_type=authorization_code";
             string html = string.Empty;
-
             try
             {
                 HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(url);
                 request.Method = "GET";
-
-                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
                 Stream ioStream = response.GetResponseStream();
-                StreamReader sr = new StreamReader(ioStream, Encoding.UTF8);
+                StreamReader sr = new StreamReader(ioStream, Encoding.Default);
                 html = sr.ReadToEnd();
                 sr.Close();
                 ioStream.Close();
                 response.Close();
-                string key="\"openid\":\"";
-                int startIndex = html.IndexOf(key);
-                if (startIndex != -1)
+                if (!html.Contains("errmsg") && !html.Contains("errcode"))
                 {
-                    int endIndex = html.IndexOf("\",", startIndex);
-                    string openid = html.Substring(startIndex + key.Length, endIndex - startIndex - key.Length);
-                    return Json(new { OpenID = openid }, JsonRequestBehavior.AllowGet);
+                    string[] arrStr = html.Replace("\"","").Replace("}","").Split(new char[] { ',',':'});
+                    return arrStr[3];
                 }
                 else
                 {

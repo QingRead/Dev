@@ -13,13 +13,13 @@ C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.Model\bin\Debu
 C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.Model\obj\Debug\Read.Model.csprojResolveAssemblyReference.cache
 C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.Model\obj\Debug\Read.Model.dll
 C:\Users\DELL\Documents\Visual Studio 2015\Projects\QingRead\Read.Model\obj\Debug\Read.Model.pdb
-F:\jiamy\测试\QingRead\Read.Model\bin\Debug\Read.Model.dll
-F:\jiamy\测试\QingRead\Read.Model\bin\Debug\Read.Model.pdb
-F:\jiamy\测试\QingRead\Read.Model\obj\Debug\Read.Model.csprojResolveAssemblyReference.cache
-F:\jiamy\测试\QingRead\Read.Model\obj\Debug\Read.Model.dll
-F:\jiamy\测试\QingRead\Read.Model\obj\Debug\Read.Model.pdb
 D:\Project\QingRead\Read.Model\bin\Debug\Read.Model.dll
 D:\Project\QingRead\Read.Model\bin\Debug\Read.Model.pdb
 D:\Project\QingRead\Read.Model\obj\Debug\Read.Model.csprojResolveAssemblyReference.cache
 D:\Project\QingRead\Read.Model\obj\Debug\Read.Model.dll
 D:\Project\QingRead\Read.Model\obj\Debug\Read.Model.pdb
+F:\jiamy\测试\QingRead\Read.Model\bin\Debug\Read.Model.dll
+F:\jiamy\测试\QingRead\Read.Model\bin\Debug\Read.Model.pdb
+F:\jiamy\测试\QingRead\Read.Model\obj\Debug\Read.Model.csprojResolveAssemblyReference.cache
+F:\jiamy\测试\QingRead\Read.Model\obj\Debug\Read.Model.dll
+F:\jiamy\测试\QingRead\Read.Model\obj\Debug\Read.Model.pdb
