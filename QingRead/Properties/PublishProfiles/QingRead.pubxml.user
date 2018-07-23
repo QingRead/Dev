@@ -52,7 +52,7 @@
       <publishTime>07/10/2018 11:44:09</publishTime>
     </File>
     <File Include="bin/QingRead.dll">
-      <publishTime>07/17/2018 15:51:48</publishTime>
+      <publishTime>07/23/2018 17:27:49</publishTime>
     </File>
     <File Include="bin/Read.BLL.dll">
       <publishTime>07/17/2018 15:51:45</publishTime>
@@ -166,7 +166,7 @@
       <publishTime>07/10/2018 11:44:08</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/17/2018 15:51:49</publishTime>
+      <publishTime>07/23/2018 17:27:49</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -4,6 +4,7 @@ using Read.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -364,6 +365,11 @@ namespace QingRead.Controllers
 
         #region 获取用户信息(根据code)
 
+        /// <summary>
+        /// 获取用户信息
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
         public string GetOpenidByCode(string code)
         {
             string url = "https://api.weixin.qq.com/sns/jscode2session?appid="+ DESEncrypt.UnAesStr("v4j1VcTNJ6jrA6WjHpZqDWO/TC68FF3qBV4cDTcCfHY=") + "&secret="+ DESEncrypt.UnAesStr("iPz+iDqI1UE2sI95IuqEcETR+1PWEL9NT8hbQJ25KAkL67//XePTfaGIUqOLKh0q") + "&js_code=" + code +"&grant_type=authorization_code";
@@ -394,6 +400,38 @@ namespace QingRead.Controllers
                 throw ex;
             }
         }
-    }
         #endregion
+
+        #region 接收文件
+
+        /// <summary>
+        /// 接收上传图片
+        /// </summary>
+        /// <param name="upload"></param>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
+        public string FilePath(string upload,string fileName)
+        {
+            try
+            {
+                string path = string.Empty;
+                HttpPostedFile file = System.Web.HttpContext.Current.Request.Files[upload];
+                if (file != null)
+                {
+                    Stream sr = file.InputStream;
+                    Bitmap bitmap = (Bitmap)Bitmap.FromStream(sr);
+                    path += file.FileName;
+                    string currentpath = System.Web.HttpContext.Current.Server.MapPath("~");
+                    bitmap.Save(currentpath + path);
+                }
+                return path;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        #endregion
+    }
 }
